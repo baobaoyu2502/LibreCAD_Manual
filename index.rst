@@ -23,7 +23,7 @@ Welcome！
 
    /contents/instruction
    /contents/installation
-   /contents/basics
+   /contents/basics/basics
    /contents/imgimport
    /contents/FAQ
    /contents/misc
