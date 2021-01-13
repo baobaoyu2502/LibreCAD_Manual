@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>五、FAQ&amp;How to &mdash; LibreCAD 使用手册 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="六、附录，声明及其他" href="../6misc/misc.html" />
+    <link rel="prev" title="四、图片导出" href="../4imgimport/imgimport.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> LibreCAD 使用手册
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../1instruction/instruction.html">一、应用介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2installation/installation.html">二、安装及界面说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3basics/basics.html">三、基本操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4imgimport/imgimport.html">四、图片导出</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">五、FAQ&amp;How to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../6misc/misc.html">六、附录，声明及其他</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LibreCAD 使用手册</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>五、FAQ&amp;How to</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/5FAQ/FAQ.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="faq-how-to">
+<h1>五、FAQ&amp;How to<a class="headerlink" href="#faq-how-to" title="Permalink to this headline">¶</a></h1>
+<p>Q:      分割导出好像对不上怎么办？</p>
+<p>A:      建议查看一下整个图表，是否有多余的点或者线，因为软件判定图形为.   整体判定，所有的实体在导出时都会被考虑到，如果有多余的实体就会影响有效部分的导出。
+此外由于软件的底层设计，在对较大的图形进行分割导出时，建议：
+1.      导出图片多的情况下，先导出较小尺寸的图（如：180 00*18000，此时导出的是4张图），确认图形是否有偏移，确认无误后进行原本的导出操作。</p>
+<ol class="arabic simple" start="2">
+<li><p>将画好的图形整体移入坐标系的第一象限，即红色坐标原点十字标的右上方，再试一次。</p></li>
+</ol>
+<p>Q:      我怎么看不到我插入的图片？
+A:      如果确认已插入图片但是不显示的话，查看工具栏Draft模式是否开启，关闭即可。</p>
+<p>Q:      我从来没用过CAD怎么办？
+A:      根据测试数据及用户反馈，光刻机掩膜版的图案并不会牵扯到太多的CAD操作，正常的画图即可应付，按照本手册来就能够完成基本的图形编辑，无需担心。</p>
+<p>Q:   导出时程序卡死了怎么办？
+A:      通过测试获取的数据，程序本身占用的内存不大，也可以在后台执行，电脑运行正常程序即可正常运行。如果不幸电脑崩溃，请重新尝试，所以超过3小时的任务请保持电脑正常运行。</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../6misc/misc.html" class="btn btn-neutral float-right" title="六、附录，声明及其他" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../4imgimport/imgimport.html" class="btn btn-neutral float-left" title="四、图片导出" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, TuoTuo.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

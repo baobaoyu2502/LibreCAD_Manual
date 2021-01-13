@@ -21,12 +21,12 @@ Welcome！
    :maxdepth: 2
    :caption: Contents:
 
-   /contents/instruction
-   /contents/installation
-   /contents/basics
-   /contents/imgimport
-   /contents/FAQ
-   /contents/misc
+   1instruction/instruction
+   2installation/installation
+   3basics/basics
+   4imgimport/imgimport
+   5FAQ/FAQ
+   6misc/misc
    
 
 
