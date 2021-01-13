@@ -2,4 +2,4 @@
 =================
 
 
-.. image:: C:/Users/pc/PycharmProjects/sphinx/_static/test.gif
+.. image:: test.gif
