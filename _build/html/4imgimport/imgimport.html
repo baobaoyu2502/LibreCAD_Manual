@@ -89,7 +89,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../1instruction/instruction.html">一、应用介绍</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2installation/installation.html">二、安装及界面说明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3basics/basics.html">三、基本操作</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">四、图片导出</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">四、图片导出</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">4.1 单图导出</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">4.2大图切分导出</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../5FAQ/FAQ.html">五、FAQ&amp;How to</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../6misc/misc.html">六、附录，声明及其他</a></li>
 </ul>
@@ -162,18 +166,28 @@
   <div class="section" id="id1">
 <h1>四、图片导出<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>导出前，确保你要导出图片的pattern所在图层的线宽为0.00/continuous，否则会对导出图片的精确度产生影响。注意图形被选中的小蓝点也会被导出，按两次Esc确保取消所有的选中图形。</p>
-<p>4.1 单图导出
-点击File-&gt;Export-&gt;Export-&gt;Export as image, 或者在工具栏中找到导出图标，点击后首先进入文件保存地址对话框，选择指定地点，输入相应文件名，选择png格式，设置完成后点击保存进入参数设置界面</p>
+<div class="section" id="id2">
+<h2>4.1 单图导出<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>点击File-&gt;Export-&gt;Export-&gt;Export as image, 或者在工具栏中找到导出图标，点击后首先进入文件保存地址对话框，选择指定地点，输入相应文件名，选择png格式，设置完成后点击保存进入参数设置界面</p>
 <p>参数主要分为三块：第一块，确定图片的尺寸，软件会根据pattern的大小默认生成20X物镜下需要的数字掩膜版尺寸，50x的物镜则需要修改最上方的参数，选择50。如果是严格依据实际需要的尺寸绘制，自动生成的尺寸是不需要调整的，如果只是大概画了一个草图则需要根据实际情况调整尺寸大小。第二，确定图片边界留白大小，单张图片不需要用到此项参数。第三，确定图片的出图样式，默认情况选择Background:Black/Colouring:Coloured，如果有别的情况可以适当调整参数。
 点击确定后会在编辑区下方显示“导出成功”的消息提示。</p>
-<p>4.2大图切分导出</p>
+</div>
+<div class="section" id="id3">
+<h2>4.2大图切分导出<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>大图切分是为了做大尺寸图形所定制开发的功能，比如一张实际6mm*6mm的大图，对于需要精确到1微米的光刻机，单张图片的像素数是非常大的，这是我们就需要将图片切割，以光刻机可以读取的大小，通过与高精度电动位移台的配合，将单张图片精准的拼接到对应位置上，这样就可以将一张大图以分步的形式曝光出来。
 仿照上面单图导出的操作，打开File-&gt;Export-&gt;Export-&gt;Export as image，同样先选择保存的文件夹地址，因为大图切分导出一般会导出多张图片并且光刻机会直接读取这些图片，所以图片是按照设定好的编号命名，无需再次命名。
 选择好文件夹地址后，进入参数设置页面，参数分为两部分，第一部分同单张导出类似，确定物镜，设置大图尺寸。第二部分的边界则是确定
 需要注意的是，软件对于导出图片的位置有一定的要求，推荐把导出的图形全部放入第一象限内，否则坐标轴会对导图区域的判定产生影响。</p>
 <p>点击确定后会开始导图流程，注意，图像根据计算导出的数量有时会很大，时间相应比较长，一旦整个过程中断，无法从中断的地方重新开始，只能从头再来，请合理安排时间，导图过程中可以切换至后台。如果需要导出非常巨大的数量可联系我们的工程师协助。</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>注意，编号为光刻机专用，请勿随意改动，否则会影响光刻机读取。</p>
-<p>注1：光刻机使用的图案根据不同倍数的物镜会有不同的要求，在20x下实际尺寸1微米用两个像素表示，50x下实际尺寸1微米用五个像素表示（例：一个5μm*5μm的pattern在20倍下需要10*10个像素，50倍下需要25*25像素）</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>光刻机使用的图案根据不同倍数的物镜会有不同的要求，在20x下实际尺寸1微米用两个像素表示，50x下实际尺寸1微米用五个像素表示（例：一个5μm*5μm的pattern在20倍下需要10*10个像素，50倍下需要25*25像素）</p>
+</div>
+</div>
 </div>
 
 

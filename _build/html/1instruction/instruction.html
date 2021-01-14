@@ -86,7 +86,16 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">一、应用介绍</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">一、应用介绍</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">基础概念</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#entity">实体（Entity）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#layers">图层（Layers）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#blocks">块（Blocks）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordinate-systems">坐标系（Coordinate Systems）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scales">比例（Scales）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dxfdwg">DXF及DWG文件</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../2installation/installation.html">二、安装及界面说明</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3basics/basics.html">三、基本操作</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../4imgimport/imgimport.html">四、图片导出</a></li>
@@ -163,28 +172,44 @@
 <h1>一、应用介绍<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>本章会对通用CAD软件进行简单介绍。由于本软件十分接近AutoCAD，DesignCAD等主流设计软件，基础好的可以跳过此节，之后应用章节亦会对不同使用方法进行介绍。</p>
 <p>本软件是一款二维CAD软件，主要用于生成掩膜版图案。简单介绍一下会用到的概念。基础概念分为实体（Entity）、图层（Layers）、块（Blocks）、坐标系（Coordinate Systems）、尺寸（Dimensions）、比例（Scales）、dxf及dwg文件、三向投影（Axonometric projection）几个部分，是了解CAD绘图的基础。</p>
-<p>本介绍会从最基础的部分开始进行基本介绍，前两张主要介绍了此软件的基本概念和一些功能，有基础的可以从第三章实操直接开始掩膜版图片的设计和导出，如果遇到问题可以参考第五章和第六章的内容对比操作进行修正，如果遇到无法解决的问题可以联系我司工程师寻求技术支持。</p>
-<p>基础概念</p>
-<p>实体（Entity）</p>
-<p>实体指的是绘布上的每一个基本单元，包括但不限于：
-<a href="#id2"><span class="problematic" id="id3">*</span></a>: 点</p>
-<p><a href="#id4"><span class="problematic" id="id5">*</span></a>: 线</p>
-<p><a href="#id6"><span class="problematic" id="id7">*</span></a>: 矩形及多边形</p>
-<p><a href="#id8"><span class="problematic" id="id9">*</span></a>: 圆，椭圆，弧，曲线</p>
+<p>本介绍会从最基础的部分开始进行基本介绍，前两张主要介绍了此软件的基本概念和一些功能，有基础的可以从第三章实操直接开始掩膜版图片的设计和导出，如果遇到问题可以参考第五章的内容对比操作进行修正，如果遇到无法解决的问题可以联系我司工程师寻求技术支持。</p>
+<div class="section" id="id2">
+<h2>基础概念<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="entity">
+<h2>实体（Entity）<a class="headerlink" href="#entity" title="Permalink to this headline">¶</a></h2>
+<p>实体指的是绘布上的每一个基本单元，包括但不限于：</p>
+<ul class="simple">
+<li><p>点</p></li>
+<li><p>线</p></li>
+<li><p>矩形及多边形</p></li>
+<li><p>圆，椭圆，弧，曲线</p></li>
+</ul>
 <p>除了这些基本图形，CAD中还包括了多段线，文本，尺寸，填充，样条曲线等。</p>
-<p>图层（Layers）</p>
+</div>
+<div class="section" id="layers">
+<h2>图层（Layers）<a class="headerlink" href="#layers" title="Permalink to this headline">¶</a></h2>
 <p>图层实际上可以看作是画布，也是该层上所有实体的集合。图层和实体是充分不必要关系，实体一定在图层上，图层不一定含有实体。
 图层具有自己的属性，线宽、颜色、线型等等，这些属性会作用在此图层所有的实体上，通常会把同一性质的实体（也就是图形）放在同一图层用于表示同类或近似的含义。</p>
-<p>块（Blocks）</p>
+</div>
+<div class="section" id="blocks">
+<h2>块（Blocks）<a class="headerlink" href="#blocks" title="Permalink to this headline">¶</a></h2>
 <p>块是一组实体的组合，类似于ppt中的组合。块可以整体插入，放大缩小，改变线宽，颜色等属性。插入后的块称为插入块，插入块的关系与原块有一定联系。当改变原块的某些实体或者属性时，插入块会有相应的变化。</p>
-<p>坐标系（Coordinate Systems）</p>
+</div>
+<div class="section" id="coordinate-systems">
+<h2>坐标系（Coordinate Systems）<a class="headerlink" href="#coordinate-systems" title="Permalink to this headline">¶</a></h2>
 <p>在LibreCAD中，分为绝对坐标及相对坐标，绝对坐标即在标准笛卡尔坐标系中的坐标，比如你要画一个10*10的正方形，坐标可以为（5，5），（15，15）。相对坐标则是相对于前一个点的坐标，同样从（5，5）画一个10*10的矩形，当输入第二个点时，输入（10，10），画出的正方形与绝对坐标中（15，15）是一样的。相对坐标更多适用于在实际画图过程中。</p>
-<p>比例（Scales）</p>
+</div>
+<div class="section" id="scales">
+<h2>比例（Scales）<a class="headerlink" href="#scales" title="Permalink to this headline">¶</a></h2>
 <p>比例在绘制真实物体大小时有着十分重要的作用，而在设计光学掩膜版时，由于我们实际在意的是像素的数量，所以对比例没有要求，默认1单位为1微米。</p>
-<p>dxf及dwg文件</p>
+</div>
+<div class="section" id="dxfdwg">
+<h2>DXF及DWG文件<a class="headerlink" href="#dxfdwg" title="Permalink to this headline">¶</a></h2>
 <p>DXF及DWG都是通常会用到的矢量图形文件，矢量文件在不同比例和尺寸的下能够保持同等的清晰度。
 DXF（Data eXchange Format）是一种通用各个CAD软件的文件格式，每个元素都是用完整的字母及数字纯文本或ASCII 格式表示，这样也导致文件本身偏大。
 DWG是AutoCAD的带专利的专用格式，LibreCAD对其没有完全的支持，推荐在一般情况下使用DXF格式。</p>
+</div>
 </div>
 
 
